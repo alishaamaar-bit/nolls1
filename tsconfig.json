@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "@nolls/ui": ["packages/ui/src"],
+      "@nolls/shared": ["packages/shared/src"],
+      "@nolls/database": ["packages/database/src"],
+      "@nolls/auth": ["packages/auth/src"],
+      "@nolls/notifications": ["packages/notifications/src"],
+      "@nolls/analytics": ["packages/analytics/src"],
+      "@nolls/types": ["packages/types/src"]
+    }
+  },
+  "include": ["packages/**/*.ts", "packages/**/*.tsx", "apps/**/*.ts", "apps/**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
+}
